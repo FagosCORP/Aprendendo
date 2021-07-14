@@ -1,0 +1,80 @@
+h1,
+h2,
+h3,
+p,
+a {
+    font-family: 'Share', cursive;
+    color: $claro;
+    font-weight: 419;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.link {
+    padding: 8px;
+    font-size: 21px;
+    transition: .6s ease;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: $claro;
+        transform: translate(30%, -50%);
+        transition: .3s ease;
+    }
+
+    &:hover {
+        opacity: .3;
+
+        &::after {
+            width: 60%;
+        }
+    }
+}
+
+h1 {
+    font-size: 73px;
+}
+
+h3 {
+    font-size: 39px;
+}
+
+.mask {
+    display: inline-block;
+    background: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.square {
+    display: block;
+    margin-top: 63px;
+    font-size: 24px;
+    padding: 18px 24px;
+    position: relative;
+    transition: .5s ease;
+
+
+    &::after{content: '';
+    display: block;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 120px;
+height: 120px;z-index: -1;
+border-radius: 30px;
+transform: translate(5%,-22%) rotate(45deg);
+background: linear-gradient(315deg, #f5d020 0%, #f53803 74%);}
+&:hover{&::after{transform: rotate(10deg);}}
+}

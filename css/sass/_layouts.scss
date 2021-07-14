@@ -1,0 +1,41 @@
+//MAIN MENU
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+//CONTAINER
+.container {
+    max-width: 1219px;
+    margin: 0 auto;
+    padding: 28px 21px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 90vh;
+}
+
+@media screen and(max-width:1200px) {
+    .hero {
+        height: auto;
+    }
+    .container{flex-direction: column;}
+}
+
+.contItens:nth-child(1) {
+    margin: 40px 0px;
+    flex-grow: 2;
+}
+
+.contItens:nth-child(2) {
+    flex-grow: 1;
+    margin: 40px 0px;
+    img {
+        max-width: 400px;
+    }
+}
